@@ -8,7 +8,7 @@ name: CI
 
 defaults:
   run:
-    working-directory: "devbox/roles/ansible-infra-tools"
+    working-directory: "devbox/ansible/roles/ansible-infra-tools"
 
 jobs:
   lint:
