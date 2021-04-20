@@ -9,13 +9,13 @@ Vagrant.configure("2") do |config|
       vm1.vm.synced_folder "~/.aws", "/aws"
       vm1.disksize.size = '15G'
   end
-  config.vm.network "forwarded_port", guest: 8081, host: 8081
+  #config.vm.network "forwarded_port", guest: 8081, host: 8081
   config.vm.provision "ansible_local" do |ansible|
     ansible.verbose = "v"
     ansible.install_mode = "pip3"
     #ansible.version = "2.9.19"
-    ansible.galaxy_role_file = "ansible/requirements.yml"
-    ansible.galaxy_roles_path = "./ansible/roles"
+    ansible.galaxy_role_file = "./ansible/requirements.yml"
+    ansible.galaxy_roles_path = "./ansible/.external_roles:./ansible/roles"
     ansible.playbook = "ansible/playbook.yml"
   end
 end

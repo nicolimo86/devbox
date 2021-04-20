@@ -1,0 +1,2 @@
+# install docker daemon
+- src: https://github.com/nickjj/ansible-docker.git
