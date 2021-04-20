@@ -5,8 +5,8 @@ Vagrant.configure("2") do |config|
           box.memory = 4086 
       end
       vm1.vm.provision :hosts, :sync_hosts => true
-      vm1.vm.synced_folder "~/workspace", "/workspace"
-      vm1.vm.synced_folder "~/.aws", "/aws"
+      vm1.vm.synced_folder "~/workspace", "/home/vagrant/workspace"
+      vm1.vm.synced_folder "~/.aws", "/home/vagrant/.aws"
       vm1.disksize.size = '15G'
   end
   #config.vm.network "forwarded_port", guest: 8081, host: 8081
