@@ -1,10 +1,10 @@
 ---
-name: CI
-"on":
+name: ansible role pipeline
+on:
   pull_request:
   push:
     branches:
-      - master
+      - "*"
 
 defaults:
   run:
@@ -34,8 +34,8 @@ jobs:
       - name: ansible-lint phase.
         run: ansible-lint
 
-  molecule:
-    name: Molecule
+  test-ansible-role:
+    name: Test role ansible-infra-tools
     runs-on: ubuntu-latest
 
     steps:

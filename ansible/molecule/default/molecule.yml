@@ -1,0 +1,35 @@
+---
+dependency:
+  name: galaxy
+  options:
+    ignore-certs: True
+    ignore-errors: True
+    role-file: requirements.yml
+driver:
+  name: docker
+platforms:
+  - name: ubuntu1804
+    image: geerlingguy/docker-ubuntu1804-ansible
+    command: /bin/systemd
+    privileged: True
+    pre_build_image: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+provisioner:
+  name: ansible
+scenario:
+  name: default
+  test_sequence:
+    #- lint
+    - destroy
+    - dependency
+    #- syntax
+    - create
+    - prepare
+    - converge
+    # - idempotence
+    #- side_effect
+    #- verify
+    - destroy
+verifier:
+  name: ansible
