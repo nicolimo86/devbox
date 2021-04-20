@@ -26,7 +26,7 @@ Starting the box:
 
     vagrant up
 
-Connecting inside the box:
+Connecting to the box:
 
     vagrant ssh
 
