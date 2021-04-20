@@ -1,0 +1,8 @@
+---
+
+- name: "include_tasks | install and configure (order of included tasks matter)"
+  include_tasks: "{{ policy_item }}"
+  loop_control:
+    loop_var: policy_item
+  with_items:
+    - "{{ lookup('fileglob',  role_path + '/tasks/task*.yml').split(',') | sort }}"
