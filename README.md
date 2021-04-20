@@ -1,6 +1,4 @@
-[![ansible palybook pipeline](https://github.com/nicolimo86/devbox/actions/workflows/ansible-playbook.yml/badge.svg)](https://github.com/nicolimo86/devbox/actions/workflows/ansible-playbook.yml)
-
-[![ansible role pipeline](https://github.com/nicolimo86/devbox/actions/workflows/ansible-role.yml/badge.svg)](https://github.com/nicolimo86/devbox/actions/workflows/ansible-role.yml)
+[![ansible palybook pipeline](https://github.com/nicolimo86/devbox/actions/workflows/ansible-playbook.yml/badge.svg)](https://github.com/nicolimo86/devbox/actions/workflows/ansible-playbook.yml) [![ansible role pipeline](https://github.com/nicolimo86/devbox/actions/workflows/ansible-role.yml/badge.svg)](https://github.com/nicolimo86/devbox/actions/workflows/ansible-role.yml)
 
 My Dev Box 
 =========
