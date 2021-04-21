@@ -1,2 +1,5 @@
 # install docker daemon
 - src: https://github.com/nickjj/ansible-docker.git
+
+# install golang from galaxy
+- name: fubarhouse.golang
