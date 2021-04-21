@@ -4,7 +4,7 @@
   become: true
   vars:
     go_version: 1.16.3
-    go_install:
+    go_get:
       - name: gopass
         url: github.com/gopasspw/gopass
   roles:
