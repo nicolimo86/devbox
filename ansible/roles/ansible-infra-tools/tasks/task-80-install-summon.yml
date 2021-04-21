@@ -1,0 +1,4 @@
+---
+- name: Install taskfile from deb
+  apt:
+    deb: https://github.com/cyberark/summon/releases/download/v{{ summon_version }}/summon_{{ summon_version }}_amd64.deb
