@@ -1,5 +1,5 @@
 ---
-name: ansible palybook pipeline
+name: ansible playbook pipeline
 on:
   pull_request:
   push:
