@@ -5,20 +5,32 @@ My Dev Box
 
 This Vagrant file creates an Ubuntu 18.04 box configured with the following tools:
 
-- terraform
-- aws-cli
-- packer
-- docker-dive
-- ansible
-- ansible-lint
-- yamllint
-- molecule
-- test-infra
-- task
-- buildpack
-- python3
-- pip3
-- virtualenv
+CLOUD
+    
+    - aws-cli
+
+INFRASTRACTURE TOOLS
+
+    - terraform
+    - packer
+    - docker-dive
+    - ansible
+    - ansible-lint
+    - yamllint
+    - molecule
+    - test-infra
+    - task
+    - buildpack
+    - gopass
+    - summon
+
+PROGRAMMING
+
+    - python3
+    - pip3
+    - virtualenv
+    - tox
+    - golang
 
 
 Example
