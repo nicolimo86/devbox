@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
   #config.vm.network "forwarded_port", guest: 8081, host: 8081
   config.vm.provision "ansible_local" do |ansible|
     ansible.verbose = "v"
-    ansible.install_mode = "pip3"
-    #ansible.version = "2.9.19"
+    #ansible.install_mode = "pip" #it fails on bionic (python 3.6+ required). Ansible will be installed via apt.
+    #ansible.version = "2.9.19" #to be use if install_mode works
     ansible.galaxy_role_file = "./ansible/requirements.yml"
     ansible.galaxy_roles_path = "./ansible/.external_roles:./ansible/roles"
     ansible.playbook = "ansible/playbook.yml"
