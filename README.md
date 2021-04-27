@@ -30,7 +30,7 @@ PROGRAMMING
     - pip3
     - virtualenv
     - tox
-    - golang
+    - go
 
 
 Example
