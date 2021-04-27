@@ -2,7 +2,7 @@
 - name: install packages to use gpg with a smartcard
   become: yes
   package:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: present
   with_items:
     - gnupg2 #for key crypto
