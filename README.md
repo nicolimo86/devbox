@@ -40,7 +40,7 @@ PROGRAMMING
     - go    (1.16.3)
 
 
-PREREQUISITES
+Prerequisites
 ----------------
 
     - install virtualbox
