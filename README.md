@@ -25,7 +25,7 @@ CONFIGURATION MANAGEMENT TOOLS
 
 CONTAINERS
 
-    - docker
+    - docker    (20.10.6)
     - docker-dive   (0.9.2)
     - Kind  (0.10.0)
     - kubectl   (1.21.0)
