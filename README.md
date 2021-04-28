@@ -55,7 +55,7 @@ Optional:
     vagrant plugin install vagrant-scp
 
 
-Example
+Usage
 ----------------
 
 Starting the box:
