@@ -8,3 +8,5 @@ docker_dive_version: 0.9.2
 buildpack_version: 0.18.0
 summon_version: 0.8.3
 gopass_version: 1.12.5
+kind_version: 0.10.0
+kubectl_version: 1.21.0

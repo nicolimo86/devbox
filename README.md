@@ -9,11 +9,10 @@ CLOUD
     
     - aws-cli
 
-INFRASTRACTURE TOOLS
+CONFIGURATION MANAGEMENT TOOLS
 
     - terraform
     - packer
-    - docker-dive
     - ansible
     - ansible-lint
     - yamllint
@@ -23,6 +22,14 @@ INFRASTRACTURE TOOLS
     - buildpack
     - gopass
     - summon
+
+CONTAINERS
+
+    - docker
+    - docker-dive
+    - Kind
+    - kubectl
+
 
 PROGRAMMING
 
