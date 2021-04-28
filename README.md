@@ -40,6 +40,21 @@ PROGRAMMING
     - go    (1.16.3)
 
 
+PREREQUISITES
+----------------
+
+    - install virtualbox
+    - install vagrant
+
+Optional:
+
+    vagrant plugin install vagrant-vbguest #virtualbox guest additions
+    vagrant plugin install vagrant-hosts #update /etc/hosts host
+    vagrant plugin install vagrant-netinfo #show forwared ports
+    vagrant plugin install vagrant-disksize #resize disk in virtualbox
+    vagrant plugin install vagrant-scp
+
+
 Example
 ----------------
 
