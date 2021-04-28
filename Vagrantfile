@@ -1,13 +1,13 @@
 Vagrant.configure("2") do |config|
-  config.vm.define :vm1 do |vm1|
-      vm1.vm.box = "ubuntu/bionic64"
-      vm1.vm.provider "virtualbox" do |box|
+  config.vm.define :devbox do |devbox_config|
+      devbox_config.vm.box = "ubuntu/bionic64"
+      devbox_config.vm.provider "virtualbox" do |box|
           box.memory = 4086 
       end
-      vm1.vm.provision :hosts, :sync_hosts => true
-      vm1.vm.synced_folder "~/workspace", "/home/vagrant/workspace"
-      vm1.vm.synced_folder "~/.aws", "/home/vagrant/.aws"
-      vm1.disksize.size = '15G'
+      devbox_config.vm.provision :hosts, :sync_hosts => true
+      devbox_config.vm.synced_folder "~/workspace", "/home/vagrant/workspace"
+      devbox_config.vm.synced_folder "~/.aws", "/home/vagrant/.aws"
+      devbox_config.disksize.size = '15G'
   end
   #config.vm.network "forwarded_port", guest: 8081, host: 8081
   config.vm.provision "ansible_local" do |ansible|
