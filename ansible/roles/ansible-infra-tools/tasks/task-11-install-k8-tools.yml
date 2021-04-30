@@ -1,0 +1,30 @@
+---
+
+- name: install Kind
+  get_url:
+    url: "https://kind.sigs.k8s.io/dl/v{{ kind_version }}/kind-Linux-amd64"
+    dest: "/usr/local/bin/kind"
+    mode: '0755'
+
+
+- name: install kubectl
+  get_url:
+    url: "https://dl.k8s.io/release/v{{ kubectl_version }}/bin/linux/amd64/kubectl"
+    dest: "/usr/local/bin/kubectl"
+    mode: '0755'
+
+- name: Download Helm
+  unarchive:
+    src: "https://get.helm.sh/helm-v{{ helm_version }}-linux-amd64.tar.gz"
+    dest: "/tmp/"
+    remote_src: true
+    mode: '0755'
+
+- name: Put Helm in place
+  ansible.builtin.copy:
+    src: "/tmp/linux-amd64/helm"
+    dest: "/usr/local/bin/"
+    remote_src: yes
+    owner: vagrant
+    group: vagrant
+    mode: '0755'

@@ -11,3 +11,4 @@ gopass_version: 1.12.5
 kind_version: 0.10.0
 kubectl_version: 1.21.0
 shellcheck_version: 0.7.2
+helm_version: 3.5.4

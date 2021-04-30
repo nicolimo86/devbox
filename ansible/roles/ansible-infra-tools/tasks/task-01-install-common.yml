@@ -8,3 +8,6 @@
   vars:
     packages:
       - unzip
+      - git
+      - curl
+      - ncdu

@@ -1,6 +1,6 @@
 ---
 
-- name: Install shellcheck
+- name: Download shellcheck
   unarchive:
     src: "https://github.com/koalaman/shellcheck/releases/download/v{{ shellcheck_version }}/shellcheck-v{{ shellcheck_version }}.linux.x86_64.tar.xz"
     dest: "/tmp/"
