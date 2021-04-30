@@ -1,0 +1,17 @@
+---
+
+- name: Install shellcheck
+  unarchive:
+    src: "https://github.com/koalaman/shellcheck/releases/download/v{{ shellcheck_version }}/shellcheck-v{{ shellcheck_version }}.linux.x86_64.tar.xz"
+    dest: "/tmp/"
+    remote_src: true
+    mode: 0755
+
+- name: Put shellcheck in place
+  ansible.builtin.copy:
+    src: "/tmp/shellcheck-v{{ shellcheck_version }}/shellcheck"
+    dest: "/usr/local/bin/"
+    remote_src: yes
+    owner: vagrant
+    group: vagrant
+    mode: '0755'
