@@ -1,0 +1,27 @@
+---
+- name: apt | install asciinema.
+  become: true
+  apt:
+    name: "{{ packages }}"
+    state: present
+    update_cache: yes
+  vars:
+    packages:
+      - asciinema
+
+- name: Create config dir asciinema.
+  ansible.builtin.file:
+    path: /home/vagrant/.config/asciinema/
+    state: directory
+    recurse: yes
+    owner: vagrant
+    group: vagrant
+    mode: '0755'
+
+- name: Copy asciinema config file.
+  copy:
+    src: "asciinema/config"
+    dest: /home/vagrant/.config/asciinema/config
+    owner: "vagrant"
+    group: "vagrant"
+    mode: "0755"
