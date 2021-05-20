@@ -3,7 +3,7 @@
 My Dev Box 
 =========
 
-This Vagrant file creates an Ubuntu 18.04 box configured with the following tools:
+This Vagrant file defines my personal devbox. It creates an Ubuntu 18.04 box configured with the following tools:
 
 CLOUD
     
