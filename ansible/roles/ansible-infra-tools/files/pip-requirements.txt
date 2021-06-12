@@ -1,0 +1,10 @@
+virtualenvwrapper
+ansible
+ansible-base
+ansible-lint
+molecule
+molecule-docker
+yamllint
+pytest-testinfra
+tox
+selinux-please-lie-to-me

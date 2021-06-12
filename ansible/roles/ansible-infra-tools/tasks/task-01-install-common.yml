@@ -11,3 +11,12 @@
       - git
       - curl
       - ncdu
+
+
+- name: Copy bash .setenv.sh
+  copy:
+    src: ".setenv.sh"
+    dest: "/home/vagrant"
+    owner: "vagrant"
+    group: "vagrant"
+    mode: '0755'
