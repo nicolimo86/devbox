@@ -1,15 +1,4 @@
 ---
-- name: apt | install python3.
-  become: true
-  apt:
-    name: "{{ packages }}"
-    state: present
-    update_cache: yes
-  vars:
-    packages:
-      - python3
-      - python3-venv
-
 - name: Copy pip pip-requirements.txt
   copy:
     src: "pip-requirements.txt"
