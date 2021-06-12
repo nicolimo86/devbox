@@ -7,29 +7,29 @@ This Vagrant file defines my personal devbox. It creates an Ubuntu 18.04 box con
 
 CLOUD
     
-    - aws-cli (2.0.30)
+    - aws-cli
 
 CONFIGURATION MANAGEMENT TOOLS
 
-    - terraform     (0.14.9)
-    - packer        (1.7.0)
-    - ansible       (2.10.7)
-    - ansible-lint  (5.0.6)
-    - yamllint      (1.26.0)
-    - molecule      (3.1.5)
-    - test-infra    (6.2.0)
-    - task          (3.2.2)
-    - buildpack     (0.18.0)
-    - gopass        (1.12.5)
-    - summon        (0.8.3)
+    - terraform     
+    - packer        
+    - ansible       
+    - ansible-lint  
+    - yamllint      
+    - molecule      
+    - test-infra    
+    - task          
+    - buildpack     
+    - gopass        
+    - summon        
 
 CONTAINERS
 
-    - docker        (20.10.6)
-    - docker-dive   (0.9.2)
-    - Kind          (0.10.0)
-    - kubectl       (1.21.0)
-    - Helm          (3.5.4)
+    - docker        
+    - docker-dive   
+    - Kind          
+    - kubectl       
+    - Helm          
 
 
 PROGRAMMING
@@ -37,9 +37,9 @@ PROGRAMMING
     - python3
     - pip3
     - virtualenv
-    - tox        (3.22.0)
-    - go         (1.16.3)
-    - shellcheck (0.7.2)
+    - tox        
+    - go         
+    - shellcheck 
 
 
 Prerequisites
