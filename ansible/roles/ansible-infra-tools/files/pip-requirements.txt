@@ -1,6 +1,5 @@
 virtualenvwrapper
 ansible
-ansible-base
 ansible-lint
 molecule
 molecule-docker
