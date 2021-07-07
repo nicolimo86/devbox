@@ -8,3 +8,4 @@ pytest-testinfra
 tox
 selinux-please-lie-to-me
 asciinema
+PyYAML
